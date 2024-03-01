@@ -9,17 +9,18 @@
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";
     grid-gap: 0.2rem;
+
 }
 
 nav{
-    background: #a7ffeb;
+    background: #110346;
     grid-area: nav;
 
 }
 
 
 main{
-    background: #84ffff;
+    background: #110346;
     grid-area: main;
 }
 
@@ -29,7 +30,7 @@ main{
 }
 
 #content1{
-    background: #6fffd2;
+    background: #110346;
     grid-area: content1;
 }
 
@@ -40,17 +41,17 @@ body{
     color: rgb(190, 184, 184);
 }
 #content2{
-    background: #6fffda;
+    background: #110346;
     grid-area: content2;
 }
 
 #content3{
-    background: #6fffba;
+    background: #110346;
     grid-area: content3;
 }
 
 footer{
-    background: #1de9b6;
+    background: #110346;
     grid-area: footer;
 } 
 
