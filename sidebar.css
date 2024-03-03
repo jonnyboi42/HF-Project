@@ -1,20 +1,33 @@
-.profile-pic{
-    border-radius: 50px;
-    height: 100px;
-
+.profile-pic {
+    /* background-image: url("https://files.cults3d.com/uploaders/21609469/illustration-file/79d10cc5-48db-4f7c-a1b1-37d0e6a2859b/look2_AdobeCreativeCloudExpress.gif"); */
+    background-image: url("https://i.pinimg.com/originals/ab/da/25/abda25d2c253502e0d7a4d1f4cc2ff9d.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    height: 170px;
+    width: 170px;
 }
 
 .user{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 4.0rem;
 }
 
 .user-name{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 2.2rem;
+
+}
+
+.name-title{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(46, 196, 23);
+    margin-top: none;
 }
 
 .option{
@@ -24,7 +37,7 @@
     flex-direction: row;
     list-style: none;
     display: block;
-    font-size: 20px;
+    font-size: 1.4rem;
     margin-bottom: 30px;    
 }
 .option li svg {
@@ -44,8 +57,8 @@
     flex-direction: row;
     list-style: none;
     display: block;
-    font-size: 20px;
-    margin-bottom: 50px;
+    font-size: 1.4rem;
+    /* margin-bottom: 50px; */
 }
 
 .page-items li{
