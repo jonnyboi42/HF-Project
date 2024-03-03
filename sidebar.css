@@ -12,8 +12,8 @@
 }
 
 .user-name{
-    font-family: "Lalezar", system-ui;
-    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     font-size: 30px;
 }
 
@@ -24,7 +24,29 @@
     flex-direction: row;
     list-style: none;
     display: block;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;    
+}
+
+.home{
+    display: flex;
+    align-items: center;
     
+}
+
+.option li svg {
+    margin-right: 12px; /* Adjust margin as needed */
+}
+
+
+.page-items{
+    font-family: "Raleway", sans-serif;
+    color: rgb(190, 184, 184);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+
 }

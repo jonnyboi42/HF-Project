@@ -13,24 +13,24 @@
 }
 
 nav{
-    background: #110346;
+    background: #100d1c;
     grid-area: nav;
 
 }
 
 
 main{
-    background: #110346;
+    background: #100d1c;
     grid-area: main;
 }
 
 #sidebar{
-    background: #110346;
+    background: #100d1c;
     grid-area: sidebar;
 }
 
 #content1{
-    background: #110346;
+    background: #100d1c;
     grid-area: content1;
 }
 
@@ -41,17 +41,17 @@ body{
     color: rgb(190, 184, 184);
 }
 #content2{
-    background: #110346;
+    background: #100d1c;
     grid-area: content2;
 }
 
 #content3{
-    background: #110346;
+    background: #100d1c;
     grid-area: content3;
 }
 
 footer{
-    background: #110346;
+    background: #100d1c;
     grid-area: footer;
 } 
 
