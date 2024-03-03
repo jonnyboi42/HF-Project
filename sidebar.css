@@ -27,17 +27,15 @@
     font-size: 20px;
     margin-bottom: 30px;    
 }
+.option li svg {
+    margin-right: 12px; /* Adjust margin as needed */
+}
 
 .home{
     display: flex;
     align-items: center;
     
 }
-
-.option li svg {
-    margin-right: 12px; /* Adjust margin as needed */
-}
-
 
 .page-items{
     font-family: "Raleway", sans-serif;
@@ -47,6 +45,20 @@
     list-style: none;
     display: block;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
 
+.page-items li{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.page-items li svg {
+    margin-right: 12px; /* Adjust margin as needed */
+}
+
+.sub-header{
+    margin-left: 30px;
+    
 }
