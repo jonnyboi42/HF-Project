@@ -1,13 +1,18 @@
 html{
     font-size: 14px;
 }
+body{
+    background-color: #070319;
+}
 .container{
     display: grid;
     height: 100vh;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; */
+    grid-template-rows: 1.5fr 1.2fr 0.8fr;
     grid-template-areas:
-        "nav nav nav nav"
+        /* "nav nav nav nav" */
         "sidebar main main main"
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";

@@ -15,11 +15,17 @@
     margin-top: 4.0rem;
 }
 
-.user-name{
+.user-info{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 2.2rem;
 
+}
+
+.user-name{
+    font-size: 2.2rem;
+    margin-bottom: 0%;
+    
 }
 
 .name-title{
@@ -27,7 +33,7 @@
     font-weight: lighter;
     text-align: center;
     color: rgb(46, 196, 23);
-    margin-top: none;
+    margin-top: 1.0rem;
 }
 
 .option{
