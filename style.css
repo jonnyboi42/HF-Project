@@ -23,14 +23,16 @@ body{
 nav{
     background: #100d1c;
     grid-area: nav;
-
 }
 
 
-main{
+/* main{
     background: #100d1c;
     grid-area: main;
-}
+    
+} */
+
+
 
 #sidebar{
     background: #100d1c;
@@ -62,4 +64,25 @@ footer{
     background: #100d1c;
     grid-area: footer;
 } 
+
+main {
+    /* Add your main content styles */
+    background: #100d1c;
+    grid-area: main;
+    /* width: 100%; Full width */
+    max-width: 1200px; /* Limiting maximum width */
+    padding: 1.0rem;
+    /* margin-top: 20px; Adjust according to your layout */
+}
+
+#myChart{
+    
+    /* Add your chart styles */
+    width: 100%;
+    height: 100%;
+    
+    /* max-width: 600px; Limiting maximum width */
+    
+    
+}
 

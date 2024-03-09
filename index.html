@@ -13,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
     <title>Document</title>
 </head>
@@ -24,7 +24,12 @@
 </html>
 <div class="container">
     <!-- <nav class="time-module">12:15PM</nav> -->
-    <main>Main</main>
+    <main >
+        <canvas style="height: 100px !important;" id="myChart">
+
+        </canvas>
+
+    </main>
     <div id="sidebar">
         <div class="user">
             <div class="profile-pic">
@@ -54,8 +59,16 @@
         </div>
 
     </div>
-    <div id="content1">Content1</div>
+    <div id="content1">
+        <canvas  id="contentOneChart">
+
+        </canvas>
+    </div>
     <div id="content2">Content2</div>
     <div id="content3">Content3</div>
     <footer>Footer</footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="mainContentScript.js"></script>
+    <script src="content1Script.js"></script>
+    
 </div>
