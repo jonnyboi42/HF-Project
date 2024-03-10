@@ -1,34 +1,38 @@
+const months = ['Gas', 'Tolls', 'Groceries', 'Entertainment', 'May', 'June', 'July'];
+const labels = months.slice(0, 4); // Get the first 7 months
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Yearly Spending',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    backgroundColor: [
+  
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    borderColor: [
 
-// // Generate random spending data for each month
-// function generateRandomSpending() {
-//     const spending = [];
-//     for (let i = 0; i < 12; i++) {
-//         // Generate a random spending amount between 1500 and 2500
-//         const amount = Math.floor(Math.random() * (2500 - 1500 + 1)) + 1500;
-//         spending.push(amount);
-//     }
-//     return spending;
-// }
-// const ctxContentOne = document.getElementById('contentOneChart');
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+    borderWidth: 1
+  }]
+};
+const ctxContentOne = document.getElementById('contentOneChart');
 
-
-// new Chart(ctxContentOne, {
-// type: 'pie',
-// data: {
-//     labels: [
-//       'Red',
-//       'Blue',
-//       'Yellow'
-//     ],
-//     datasets: [{
-//       label: 'My First Dataset',
-//       data: [300, 50, 100],
-//       backgroundColor: [
-//         'rgb(89 23 196, .1)',
-//         'rgb(10 48 173)',
-//         'rgb(46, 196, 23)'
-//       ],
-//       hoverOffset: 4
-//     }]
-//   }
-// });
+new Chart(ctxContentOne, {
+  type: 'bar',
+  data: data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    responsive: true,
+  }
+});
