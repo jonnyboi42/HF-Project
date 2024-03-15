@@ -18,7 +18,7 @@ type: 'line',
 data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'Novermber', 'December'],
     datasets: [{
-    label: 'Amount Spent',
+    label: 'Monthly Spending',
     data: generateRandomSpending(),
     borderWidth: 1
     }]
