@@ -1,68 +1,96 @@
-/* .transaction-title{
-    display: flex;
-    justify-content: center;
 
-    font-size: 20px;
-    background-color: rgb(16, 2, 27);
-    color: rgb(104, 34, 210);
-    border-radius: 6px;
-}
 
-.transactions{
-    background-color:  rgb(16, 2, 27);
-    display: flex;
-    justify-content: center;
-    
-}
 
-.transactions li{
-    margin: 20px;
-    background-color: blue;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-} */
 
-#content2{
+#content2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .transaction-title {
-   
     text-align: center;
     font-size: 20px;
     background-color: rgb(16, 2, 27);
     color: rgb(104, 34, 210);
     border-radius: 6px;
     width: 75%;
-    margin-bottom: 10px; /* Add some space below the title */
+    margin-bottom: 0;
+    
 }
 
-.transactions {
-    background-color: rgb(16, 2, 27);
-    display: flex;
-    justify-content: left;
-    padding-left: 1.0rem;
-    align-items: center; /* Center items vertically */
+/* .transactions {
+    
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 90%;
+} 
+
+
+.transaction-sub-title {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(183, 179, 179); 
+    
+} 
+*/
+
+.transactions {
+    /* background-color: rgb(16, 2, 27); */
+    border-radius: 20px;
+    width: 90%;
+    max-height: 200px; /* Set a fixed height for the container */
+    padding-right: 15px; /* Add padding to accommodate the scrollbar */
+    padding-left: 10px;
+    overflow-y: auto; /* Enable vertical scrollbar when necessary */
+}
+
+.transaction-sub-title {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(183, 179, 179); /* Set the color of the sub-title */
+    margin-top: 5px;
+    padding: 0px;
 }
 
 .transactions ul {
-    padding: 0; /* Remove default padding from the ul */
-    margin: 0; /* Remove default margin from the ul */
-    /* padding: 2.0rem; */
+    padding: 0px;
+    margin: 0px;
 }
 
 .transactions li {
-    background-color: rgb(9, 9, 66);
+    /* background-color: rgb(9, 9, 66); */
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Center items vertically */
-    margin-bottom: 5px; /* Add some space between list items */
-    padding: .3rem;
-    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.0rem;
+    font-weight:lighter;
+    border-bottom: 1px solid rgb(54, 52, 52);
+    color: white;
+}
+
+.Type,
+.Transaction,
+.amount {
+    flex: 1; /* Distribute the space equally */
+    text-align: center; /* Center the text */
+}
+
+.transaction-sub-title h3 {
+    margin: 0; /* Remove default margin */
+    padding-bottom: 0; /* Remove default padding */
+}
+
+.transactions li h4 {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(78, 15, 173); /* Set the color of the thumb */
+    border-radius: 4px; /* Round the corners of the thumb */
 }

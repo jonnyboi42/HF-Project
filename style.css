@@ -17,6 +17,7 @@ body{
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";
     grid-gap: 0.2rem;
+    
 
 }
 
@@ -37,6 +38,7 @@ nav{
 #sidebar{
     background: #100d1c;
     grid-area: sidebar;
+    border-radius: 20px;
 }
 
 #content1{
@@ -45,6 +47,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+    
 }
 
 .monthly-title{
@@ -67,16 +71,19 @@ body{
 #content2{
     background: #100d1c;
     grid-area: content2;
+    border-radius: 20px;
 }
 
 #content3{
     background: #100d1c;
     grid-area: content3;
+    border-radius: 20px;
 }
 
 footer{
     background: #100d1c;
     grid-area: footer;
+    border-radius: 20px;
 } 
 
 main {
@@ -86,6 +93,7 @@ main {
     /* width: 100%; Full width */
     max-width: 1200px; /* Limiting maximum width */
     padding: 1.0rem;
+    border-radius: 20px;
     /* margin-top: 20px; Adjust according to your layout */
 }
 

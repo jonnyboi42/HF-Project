@@ -1,18 +1,31 @@
 .profile-pic {
     /* background-image: url("https://files.cults3d.com/uploaders/21609469/illustration-file/79d10cc5-48db-4f7c-a1b1-37d0e6a2859b/look2_AdobeCreativeCloudExpress.gif"); */
-    background-image: url("https://i.pinimg.com/originals/ab/da/25/abda25d2c253502e0d7a4d1f4cc2ff9d.gif");
+    /* background-image: url("https://i.pinimg.com/originals/ab/da/25/abda25d2c253502e0d7a4d1f4cc2ff9d.gif");
     background-repeat: no-repeat;
     background-size: contain;
+    border-radius: 20px; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.2rem;
+    border: 1px solid rgb(8, 8, 69);
     border-radius: 20px;
-    height: 170px;
-    width: 170px;
+    background-color: rgb(6, 1, 22);
+    height: 220px;
+    /* width: 170px;  */
 }
 
 .user{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 4.0rem;
+    margin-top: 1.0rem
+}
+
+.am-pm{
+    font-size: 3.8rem;
 }
 
 .user-info{
@@ -34,6 +47,23 @@
     text-align: center;
     color: rgb(46, 196, 23);
     margin-top: 1.0rem;
+}
+
+p.time{
+    margin: 0;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 200;
+    font-size: 5.7rem;
+}
+p.date{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 250;
+    font-size: 3.0rem;
+    text-align: center;
 }
 
 .option{
