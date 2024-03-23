@@ -94,3 +94,11 @@
     background-color: rgb(78, 15, 173); /* Set the color of the thumb */
     border-radius: 4px; /* Round the corners of the thumb */
 }
+
+.transactions li .debit {
+    color: #bd2929; /* Set color to red for Debit transactions */
+}
+
+.transactions li .credit {
+    color: #2dc62d; /* Set color to green for Credit transactions */
+}

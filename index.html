@@ -17,6 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!-- Time Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <!-- Script for Content 1 -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -32,6 +37,7 @@
 <div class="container">
 
     <main >
+        <!-- <p class="Month-Year-Title">Monthly Spending</p> -->
         <canvas style="height: 100px !important;" id="myChart">
 
         </canvas>
@@ -75,24 +81,7 @@
 
         </canvas>
     </div>
-    <!-- <div id="content2">
-        <p class="transaction-title">Transaction History</p>
-        <div class="transactions">
-            <div class="transaction-sub-title">
-                <div class="Type">Type</div>
-                <div class="Transaction">Transaction</div>
-                <div class="amount">Amt</div>
-            </div>
 
-            <ul>
-                <li>Debit: Amazon Mktplace Amt: $54.76</li>
-                <li>Debit: H-E-B Gas Station Amt: $34.19</li>
-                <li>Credit: Amazon Mktplace Rtrn: $20.45</li>
-                <li>Amazon Mktplace Amt: $54.76</li>
-            </ul>
-
-        </div>
-    </div> -->
     <div id="content2">
         <p class="transaction-title">Transaction History</p>
         <div class="transactions">
@@ -103,45 +92,46 @@
             </div>
             <ul>
                 <li>
-                    <h4>Debit</h4>
+                    <h4>Credit</h4>
                     <h4>Amazon Mktplace</h4>
-                    <h4>$54.76</h4>
+                    <h4 class="credit">$32.16</h4>
                 </li>
                 <li>
                     <h4>Debit</h4>
                     <h4>H-E-B Gas Station</h4>
-                    <h4>$34.19</h4>
+                    <h4 class="debit">$34.19</h4>
                 </li>
                 <li>
                     <h4>Credit</h4>
                     <h4>Amazon Mktplace Rtrn</h4>
-                    <h4>$20.45</h4>
+                    <h4 class="credit">$20.45</h4>
+                </li>
+                <li>
+                    <h4>Debit</h4>
+                    <h4>Amazon Mktplace</h4>
+                    <h4 class="debit">$54.76</h4>
+                </li>
+                <li>
+                    <h4>Debit</h4>
+                    <h4>H-E-B Gas Station</h4>
+                    <h4 class="debit">$34.19</h4>
                 </li>
                 <li>
                     <h4>Credit</h4>
                     <h4>Amazon Mktplace Rtrn</h4>
-                    <h4>$20.45</h4>
-                 
-                </li>
-                <li>
-                    <h4>Credit</h4>
-                    <h4>Amazon Mktplace Rtrn</h4>
-                    <h4>$20.45</h4>
-                 
-                </li>
-                <li>
-                    <h4>Credit</h4>
-                    <h4>Amazon Mktplace Rtrn</h4>
-                    <h4>$20.45</h4>
-                 
+                    <h4 class="credit">$20.45</h4>
                 </li>
             </ul>
         </div>
     </div>
+    
     <div id="content3">Content3</div>
     <footer>Summary</footer>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <script src="mainContentScript.js"></script>
     <script src="content1Script.js"></script>
+    <script src="transaction.js"></script>
     
 </div>
