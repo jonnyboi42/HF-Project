@@ -27,10 +27,6 @@
     margin-top: 1.0rem
 }
 
-.am-pm{
-    font-size: 3.8rem;
-}
-
 .user-info{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -58,15 +54,16 @@ p.time{
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 200;
-    font-size: 5.7rem;
+    font-size: 4.2rem;
 }
 p.date{
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 250;
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     text-align: center;
+    color: rgb(23, 193, 23);
 }
 
 .option{
