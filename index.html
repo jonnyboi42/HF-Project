@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="reminders.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="header.css">
-    
+    <link rel="stylesheet" href="financial-info.css">
     <link rel="stylesheet" href="Transactionhistory.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -41,11 +42,26 @@
 
     <main >
         <!-- <p class="Month-Year-Title">Monthly Spending</p> -->
-        <canvas style="height: 100px !important;" id="myChart">
+        <!-- <canvas style="height: 100px !important;" id="myChart">
 
-        </canvas>
+        </canvas> -->
 
     </main>
+    <div id="financial-info">
+        <div class="checking-account">
+            <div class="available-balance-text">Available Balance</div>
+            <div class="available-balance-amount">$2,041.05</div>
+        </div>
+        <div class="credit-account">
+            <div class="credit-balance-text">Credit Card Balance</div>
+            <div class="credit-balance-amount">$2,041.05</div>
+            <div class="make-payment">
+                <div class="make-payment-text">Payment Due: August 5th</div>
+                <button class="credit-card-payment-buttonx">Pay</button>
+            </div>
+        </div>
+
+    </div>
 
     <div id="sidebar">
         <div class="user">

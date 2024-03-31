@@ -1,0 +1,50 @@
+.checking-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Roboto", sans-serif;
+
+    width: 50%;
+    height: 50%;
+    background-color: rgb(2, 2, 31);
+}
+.credit-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Roboto", sans-serif;
+
+    width: 50%;
+    height: 50%;
+    background-color: rgb(2, 2, 31);
+    
+}
+.available-balance-text{
+    font-weight: 100;
+    font-size: 3.2rem;
+}
+
+.available-balance-amount{
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: rgb(8, 168, 43);
+}
+
+.credit-balance-text{
+    font-weight: 100;
+    font-size: 2.2rem;
+}
+
+.credit-balance-amount{
+    font-weight: 200;
+    font-size: 3.0rem;
+    color: rgb(181, 8, 8);
+}
+
+.credit-card-payment-button{
+    color:rgb(244, 245, 246);
+}

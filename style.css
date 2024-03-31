@@ -13,7 +13,7 @@ body{
     grid-template-rows: 1.5fr 1.2fr 0.8fr;
     grid-template-areas:
         /* "nav nav nav nav" */
-        "sidebar main main main"
+        "sidebar financial-info financial-info main"
         "sidebar content1 content2 content3"
         "sidebar footer footer footer";
     grid-gap: 0.2rem;
@@ -26,6 +26,10 @@ nav{
     grid-area: nav;
 }
 
+#financial-info{
+    background: #100d1c;
+    grid-area: financial-info;
+}
 
 /* main{
     background: #100d1c;
@@ -43,6 +47,7 @@ nav{
 
 #content1{
     background: #100d1c;
+    
     grid-area: content1;
     display: flex;
     flex-direction: column;
