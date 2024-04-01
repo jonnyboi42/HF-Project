@@ -1,0 +1,88 @@
+#content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reminder-title {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(16, 2, 27);
+    color: rgb(104, 34, 210);
+    border-radius: 6px;
+    width: 75%;
+    margin-bottom: 0;
+}
+
+.reminders {
+    /* margin-top: 10px; */
+    width: 90%;
+    height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.reminder {
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(201, 206, 206);
+    /* position: relative; */
+    flex-wrap: wrap; /* Allow content to wrap if it exceeds the container's width */
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(54, 52, 52);
+}
+
+.reminder-content {
+    flex: 1; /*take up remaining space*/
+    word-wrap: break-word; /* Ensure content stays contained within its container and wraps if needed */
+    
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    
+}
+
+button {
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(59, 6, 158);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 6, 158);
+    transition: background-color 0.5s;
+}
+
+.buttons button:hover {
+    background-color: rgba(241, 237, 248, 0.1);
+}
+
+.remove-svg {
+    fill: rgb(243, 13, 13);
+}
+
+.complete-svg {
+    fill: rgb(250, 253, 250);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(78, 15, 173);
+    border-radius: 4px;
+}
