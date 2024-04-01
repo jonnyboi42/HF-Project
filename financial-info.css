@@ -1,3 +1,6 @@
+#financial-info{
+    border-radius: 20px;
+}
 .checking-account{
     display: flex;
     flex-direction: column;
@@ -8,7 +11,7 @@
 
     width: 50%;
     height: 50%;
-    background-color: rgb(2, 2, 31);
+    /* background-color: rgb(2, 2, 31); */
 }
 .credit-account{
     display: flex;
@@ -20,7 +23,7 @@
 
     width: 50%;
     height: 50%;
-    background-color: rgb(2, 2, 31);
+    /* background-color: rgb(2, 2, 31); */
     
 }
 .available-balance-text{
@@ -46,5 +49,16 @@
 }
 
 .credit-card-payment-button{
-    color:rgb(244, 245, 246);
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 10px;
+    color:rgb(189, 191, 193);
+}
+
+.credit-card-view-details-button{
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 10px;
+    color:rgb(189, 191, 193);
 }

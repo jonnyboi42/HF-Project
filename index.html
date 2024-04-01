@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="financial-info.css">
     <link rel="stylesheet" href="Transactionhistory.css">
+    <link rel="stylesheet" href="living-expenses.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,10 +55,14 @@
         </div>
         <div class="credit-account">
             <div class="credit-balance-text">Credit Card Balance</div>
-            <div class="credit-balance-amount">$2,041.05</div>
+            <div class="credit-balance-amount">-$2,041.05</div>
             <div class="make-payment">
-                <div class="make-payment-text">Payment Due: August 5th</div>
-                <button class="credit-card-payment-buttonx">Pay</button>
+                <div class="make-payment-text">Next Payment Due: August 5th</div>
+                <div class="credit-card-buttons">
+                    <button class="credit-card-payment-button">Pay</button>
+                    <button class="credit-card-view-details-button">View Details</button>
+                </div>
+                
             </div>
         </div>
 
@@ -336,7 +341,15 @@
         <p class="reminder-title">Reminders</p>
         
     </div>
-    <footer>Summary</footer>
+    <footer>
+        <div class="summary-expenses">
+            <div class="living-expense">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3,13h1v2v5c0,1.103,0.897,2,2,2h3h6h3c1.103,0,2-0.897,2-2v-5v-2h1c0.404,0,0.77-0.244,0.924-0.617 c0.155-0.374,0.069-0.804-0.217-1.09l-9-9c-0.391-0.391-1.023-0.391-1.414,0l-9,9c-0.286,0.286-0.372,0.716-0.217,1.09 C2.23,12.756,2.596,13,3,13z M10,20v-5h4v5H10z M12,4.414l6,6V15l0,0l0.001,5H16v-5c0-1.103-0.897-2-2-2h-4c-1.103,0-2,0.897-2,2v5 H6v-5v-3v-1.586L12,4.414z"></path></svg>
+                <p>Living</p>
+                <p>$1,0455</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
