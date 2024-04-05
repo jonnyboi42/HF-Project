@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="financial-info.css">
     <link rel="stylesheet" href="Transactionhistory.css">
     <link rel="stylesheet" href="living-expenses.css">
+    <link rel="stylesheet" href="main.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,10 +43,22 @@
 <div class="container">
 
     <main >
-        <!-- <p class="Month-Year-Title">Monthly Spending</p> -->
-        <!-- <canvas style="height: 100px !important;" id="myChart">
+        <div class="small-expenses">
+            <div class="small-expenses-title">Small Expenses</div>
+            <div class="netflix">
+                <div class="netflix-logo"><img src="/png/netflix-svgrepo-com.svg" alt=""></div>
+                <div class="netflix-expense">$12.49</div>
+            </div>
+            <div class="disney-plus">
+                <div class="disney-logo"><img src="png/disneyplus-svgrepo-com.svg" alt=""></div>
+                <div class="disney-expense">$12.49</div>
+            </div>
+            <div class="hbo-max">
+                <div class="hbo-max-logo"><img src="/png/hbo-max-svgrepo-com.svg" alt=""></div>
+            </div>
 
-        </canvas> -->
+        </div>
+
 
     </main>
     <div id="financial-info">
@@ -341,13 +354,42 @@
         <p class="reminder-title">Reminders</p>
         
     </div>
+    
     <footer>
         <div class="summary-expenses">
-            <div class="living-expense">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3,13h1v2v5c0,1.103,0.897,2,2,2h3h6h3c1.103,0,2-0.897,2-2v-5v-2h1c0.404,0,0.77-0.244,0.924-0.617 c0.155-0.374,0.069-0.804-0.217-1.09l-9-9c-0.391-0.391-1.023-0.391-1.414,0l-9,9c-0.286,0.286-0.372,0.716-0.217,1.09 C2.23,12.756,2.596,13,3,13z M10,20v-5h4v5H10z M12,4.414l6,6V15l0,0l0.001,5H16v-5c0-1.103-0.897-2-2-2h-4c-1.103,0-2,0.897-2,2v5 H6v-5v-3v-1.586L12,4.414z"></path></svg>
-                <p>Living</p>
-                <p>$1,0455</p>
+            <div class="summary">
+                <div class="summary-text">
+                    <div class="total-monthly-expense-title">Total Monthly Expense</div>
+                    <div class="total-monthly-expense-text">$3,567.56</div>
+                    <button class="expense-toggle-button" onclick="toggleExpenses()">Expenses</button>
+                </div>
+
+                
             </div>
+            
+            <div class="living-expense hidden">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3,13h1v2v5c0,1.103,0.897,2,2,2h3h6h3c1.103,0,2-0.897,2-2v-5v-2h1c0.404,0,0.77-0.244,0.924-0.617 c0.155-0.374,0.069-0.804-0.217-1.09l-9-9c-0.391-0.391-1.023-0.391-1.414,0l-9,9c-0.286,0.286-0.372,0.716-0.217,1.09 C2.23,12.756,2.596,13,3,13z M10,20v-5h4v5H10z M12,4.414l6,6V15l0,0l0.001,5H16v-5c0-1.103-0.897-2-2-2h-4c-1.103,0-2,0.897-2,2v5 H6v-5v-3v-1.586L12,4.414z"></path></svg>
+                <div class="living-title">Living</div>
+                <div class="living-cost">$2,075.54</div>
+            </div>
+           
+            
+            <div class="living-expense hidden">
+                <img src="png/food-svgrepo-com.svg" alt="">
+                <div class="living-title">Take Out</div>
+                <div class="living-cost">$504.76</div>
+            </div>
+            <div class="living-expense hidden">
+                <img src="png/grocery-store-groceries-svgrepo-com.svg" alt="">
+                <div class="living-title">Groceries</div>
+                <div class="living-cost">$2,075.54</div>
+            </div>
+            <div class="living-expense hidden">
+                <img src="png/food-svgrepo-com.svg" alt="">
+                <div class="living-title">Take Out</div>
+                <div class="living-cost">$504.76</div>
+            </div>
+
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
@@ -356,5 +398,6 @@
     <script src="mainContentScript.js"></script>
     <script src="content1Script.js"></script>
     <script src="transaction.js"></script>
+    <script src="expense-menu.js"></script>
     
 </div>

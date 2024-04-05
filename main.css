@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.small-expenses-title{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(16, 2, 27);
+    color: rgb(104, 34, 210);
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 0;
+}

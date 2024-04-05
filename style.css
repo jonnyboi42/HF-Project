@@ -7,9 +7,7 @@ body{
 .container{
     display: grid;
     height: 100vh;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; */
     grid-template-rows: 1.5fr 1.2fr 0.8fr;
     grid-template-areas:
         /* "nav nav nav nav" */
@@ -89,9 +87,10 @@ footer{
     background: #100d1c;
     grid-area: footer;
     border-radius: 20px;
+    height: 100%;
 } 
 
-main {
+main{
     /* Add your main content styles */
     background: #100d1c;
     grid-area: main;
