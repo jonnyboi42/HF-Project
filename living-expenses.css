@@ -50,18 +50,12 @@
 
 .living-expense {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1.5s ease;
     cursor: pointer; /* Optional: Change cursor to pointer to indicate interaction */
-    animation: fadeIn 0.9s ease forwards; /* Apply fadeIn animation */
-    transition: background-color 0.9s ease; /* Add transition to background-color property */
     pointer-events: none; /* Disable pointer events to prevent interaction before button click */
 }
 
-/* @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-   */
+
 
 .living-expense:hover {
     background-color: #6608c4; /* Change background color on hover */

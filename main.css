@@ -12,3 +12,50 @@
     width: 100%;
     margin-bottom: 0;
 }
+
+.netflix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(81, 80, 80);
+}
+
+.expense{
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+.expense-button{
+    /* margin-left: 40px; */
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.disney-plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(81, 80, 80);
+}
+
+.amazon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(81, 80, 80);
+
+}
+
+.amazon-logo img {
+    width: 50px; /* Set the width of the image */
+    height: 75px; /* Maintain the aspect ratio */
+}
+
+
+
