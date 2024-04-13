@@ -1,91 +1,69 @@
-// const months = ['Gas', 'Tolls', 'Groceries', 'Entertainment', 'May', 'June', 'July'];
-// const labels = months.slice(0, 4); // Get the first 7 months
-// const data = {
-//   labels: labels,
-//   datasets: [{
-//     label: 'Yearly Spending',
-//     data: [65, 59, 80, 81, 56, 55, 40],
-//     backgroundColor: [
-  
-//       'rgba(75, 192, 192, 0.2)',
-//       'rgba(54, 162, 235, 0.2)',
-//       'rgba(153, 102, 255, 0.2)',
-//       'rgba(201, 203, 207, 0.2)'
-//     ],
-//     borderColor: [
+function markAsComplete(button) {
+  var reminderContent = button.closest('.reminder').querySelector('.reminder-content');
+  reminderContent.classList.toggle('complete-line');
+}
 
-//       'rgb(75, 192, 192)',
-//       'rgb(54, 162, 235)',
-//       'rgb(153, 102, 255)',
-//       'rgb(201, 203, 207)'
-//     ],
-//     borderWidth: 1
-//   }]
-// };
-// const ctxContentOne = document.getElementById('contentOneChart');
 
-// new Chart(ctxContentOne, {
-//   type: 'bar',
-//   data: data,
-//   options: {
-//     plugins: {
-//       legend: {
-//           display: false
-//       },
-//   },
-//     scales: {
-//       y: {
-//         beginAtZero: true
+function markAsComplete(button) {
+  var reminderContent = button.parentElement.parentElement.previousElementSibling;
+  reminderContent.style.textDecoration = 'line-through';
+  // Trigger reflow
+  void reminderContent.offsetWidth;
+}
+
+
+
+// function removeReminder(button) {
+//   var reminder = button.parentElement.parentElement.parentElement;
+//   reminder.style.opacity = '0'; // Set opacity to 0 for fading effect
+//   setTimeout(function() {
+//       reminder.remove(); // Remove the reminder after the fade-out effect
+//       if (document.querySelectorAll('.reminder').length === 0) {
+//           // If there are no more reminders, display the message
+//           var noRemindersMessage = document.createElement('p');
+//           noRemindersMessage.textContent = 'Currently No Reminders';
+//           noRemindersMessage.classList.add('no-reminders'); // Add class to the message
+//           var image = document.createElement('img');
+//           image.setAttribute('src', 'png/relax.svg');
+//           image.setAttribute('alt', 'Relax Image');
+//           image.setAttribute('width', '50');
+//           image.setAttribute('height', '50');
+//           noRemindersMessage.appendChild(image); // Append image to the message
+//           document.querySelector('.reminders').appendChild(noRemindersMessage);
 //       }
-//     },
-//     responsive: true,
-     
-//   }
-// });
+//   }, 500); // Delay removal by 500 milliseconds (same as transition duration)
+//   // Delay refreshing the list by 600 milliseconds
+//   setTimeout(function() {
+//       refreshReminders();
+//   }, 600);
+// }
 
-const months = ['Gas', 'Tolls', 'Groceries', 'Entertainment', 'May', 'June', 'July'];
-const labels = months.slice(0, 4); // Get the first 7 months
-const data = {
-  labels: labels,
-  datasets: [{
-    label: ' Approx Spent This Month',
-    data: [65, 59, 80, 81, 56, 55, 40],
-    backgroundColor: [
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
-    ],
-    borderColor: [
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
-    ],
-    borderWidth: 1
-  }]
-};
-const ctxContentOne = document.getElementById('contentOneChart');
-
-new Chart(ctxContentOne, {
-  type: 'bar',
-  data: data,
-  options: {
-    plugins: {
-      legend: {
-          display: false
-      },
-  },
-    scales: {
-      y: {
-        beginAtZero: true,
-        ticks: {
-          callback: function(value) {
-            return '$' + value;
-          }
-        }
+function removeReminder(button) {
+  var reminder = button.parentElement.parentElement.parentElement;
+  reminder.style.opacity = '0'; // Set opacity to 0 for fading effect
+  setTimeout(function() {
+      reminder.remove(); // Remove the reminder after the fade-out effect
+      if (document.querySelectorAll('.reminder').length === 0) {
+          // If there are no more reminders, display the message
+          var noRemindersMessage = document.createElement('p');
+          noRemindersMessage.textContent = 'Currently No Reminders';
+          noRemindersMessage.classList.add('no-reminders'); // Add class to the message
+          noRemindersMessage.style.opacity = '0'; // Set opacity to 0 for fading in
+          var image = document.createElement('img');
+          image.setAttribute('src', 'png/relax.svg');
+          image.setAttribute('alt', 'Relax Image');
+          image.setAttribute('width', '50');
+          image.setAttribute('height', '50');
+          image.style.opacity = '0'; // Set opacity to 0 for fading in
+          noRemindersMessage.appendChild(image); // Append image to the message
+          document.querySelector('.reminders').appendChild(noRemindersMessage);
+          // Fading in the message and image
+          setTimeout(function() {
+            noRemindersMessage.style.transition = 'opacity 0.9s ease';
+            noRemindersMessage.style.opacity = '1';
+            image.style.transition = 'opacity 1.3s ease';
+            image.style.opacity = '1';
+          }, 100); // Delay fading in by 100 milliseconds
       }
-    },
-    responsive: true,
-  }
-});
+  }, 500); // Delay removal by 500 milliseconds (same as transition duration)
+}

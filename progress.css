@@ -38,3 +38,65 @@
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+.progress-container {
+    margin-top: 30px;
+    width: 50%;
+    background-color: #8b8383;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide the overflow for the glowing effect */
+    position: relative; /* Position relative for absolute positioning of text */
+}
+
+.progress-bar {
+    width: 0%; /* Start with 0% */
+    height: 30px;
+    background-color:#4e16a5;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    animation: fillProgressBar 3s ease forwards; /* Animation to fill the progress bar */
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4caf50;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition animation */
+}
+
+@keyframes fillProgressBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 78%; /* Adjust this to your desired value */
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
+    }
+    to {
+        box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50;
+    }
+}
