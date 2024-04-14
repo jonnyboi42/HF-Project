@@ -26,17 +26,6 @@
     font-weight: 200;
 }
 
-.expense-button{
-    /* margin-left: 40px; */
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    color: white;
-}
-
 .disney-plus{
     display: flex;
     justify-content: space-between;
@@ -55,6 +44,25 @@
 .amazon-logo img {
     width: 50px; /* Set the width of the image */
     height: 75px; /* Maintain the aspect ratio */
+}
+
+
+.expense-button {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+    background-color: #17032e; /* Default background color */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.expense-button:hover {
+    background-color: #6a0db0; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer when hovering */
 }
 
 

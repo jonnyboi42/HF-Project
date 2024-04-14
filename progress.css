@@ -51,7 +51,7 @@
     width: 50%;
     background-color: #8b8383;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     overflow: hidden; /* Hide the overflow for the glowing effect */
     position: relative; /* Position relative for absolute positioning of text */
 }
@@ -99,4 +99,16 @@
     to {
         box-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50;
     }
+}
+
+.total-spent{
+    margin-top: none;
+    
+}
+.amount-spent-text{
+    font-size: 1.2rem;
+}
+.amount-spent{
+    font-size: 1.3rem;
+    
 }

@@ -8,10 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-size: 3.2rem; */
-    border: 1px solid rgb(8, 8, 69);
+    align-items: center;
     border-radius: 20px;
-    background-color: rgb(6, 1, 22);
     height: 220px;
 
     font-family: "Roboto", sans-serif;
@@ -48,22 +46,30 @@
     margin-top: 1.0rem;
 }
 
-p.time{
-    margin: 0;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 200;
-    font-size: 4.2rem;
+.calendar-svg{
+    font-size: 3.2rem;
+    margin-right: 250px;
+    
 }
+
+
 p.date{
+    
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 250;
     font-size: 4.0rem;
     text-align: center;
-    color: rgb(23, 193, 23);
+    color: rgb(207, 169, 215);
+    
+}
+
+.time{
+    font-size: 4.2rem;
+    font-weight: 200;
+    color: #c6c1c1;
+    /* border-bottom: solid 1px rgb(114, 112, 112); */
 }
 
 .option{
@@ -110,4 +116,31 @@ p.date{
 .sub-header{
     margin-left: 30px;
     
+}
+
+.expense-toggle-button {
+    width: 50%;
+    height: 25%;
+    border: 1px solid rgb(80, 7, 152);
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: 300;
+    color: rgb(230, 225, 231);
+    cursor: pointer; /* Change cursor to pointer to indicate interaction */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.expense-toggle-button:hover {
+    background-color: #6608c4; /* Change background color on hover */
+}
+.page-items li a,
+.page-items li a:visited {
+    color: rgb(194, 188, 188); /* Change the color of the links */
+ /* Remove the underline from the links */
+    transition: color 0.3s; /* Add transition effect for color change */
+}
+
+.page-items li a:hover {
+    color: rgb(132, 31, 152); /* Change link color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }

@@ -8,10 +8,9 @@
     align-items: center;
     
     font-family: "Roboto", sans-serif;
-
     width: 50%;
-    height: 50%;
-    /* background-color: rgb(2, 2, 31); */
+    height: 40%;
+    
 }
 .credit-account{
     display: flex;
@@ -23,7 +22,7 @@
 
     width: 50%;
     height: 50%;
-    /* background-color: rgb(2, 2, 31); */
+    
     
 }
 .available-balance-text{
@@ -61,4 +60,15 @@
     padding: 4px;
     margin-top: 10px;
     color:rgb(189, 191, 193);
+}
+
+.credit-card-payment-button,
+.credit-card-view-details-button {
+    transition: background-color 0.5s ease; /* Add transition for background-color */
+}
+
+.credit-card-payment-button:hover,
+.credit-card-view-details-button:hover {
+    background-color:rgb(59, 6, 158); /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }

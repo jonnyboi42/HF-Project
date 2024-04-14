@@ -15,12 +15,13 @@
 }
 
 .reminders {
-    /* margin-top: 10px; */
+    
     width: 90%;
     height: 200px;
     overflow-y: auto;
     padding-right: 10px;
 }
+
 
 .reminder {
     display: flex;
@@ -28,11 +29,13 @@
     font-size: 17px;
     font-weight: 100;
     color: rgb(201, 206, 206);
-    /* position: relative; */
-    flex-wrap: wrap; /* Allow content to wrap if it exceeds the container's width */
+    
+    flex-wrap: wrap; 
     padding-top: 10px;
     border-bottom: 1px solid rgb(54, 52, 52);
 }
+
+
 
 .reminder-content {
     flex: 1; /*take up remaining space*/
@@ -68,7 +71,9 @@ button {
 
 .buttons button:hover {
     background-color: rgba(241, 237, 248, 0.1);
+    cursor: pointer; /* Change cursor to pointer when hovering */
 }
+
 
 .remove-svg {
     fill: rgb(243, 13, 13);
